@@ -1,6 +1,5 @@
 class Helper {
   Map<String, String> getParams(List<String> arguments) {
-    print('arguments = $arguments');
     if (arguments.isNotEmpty) {
       for (var item in arguments) {
         if (!item.contains('=')) {

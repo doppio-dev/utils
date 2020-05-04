@@ -4,7 +4,6 @@ import 'package:plain_optional/plain_optional.dart';
 
 class VersionPub {
   String getVersion({String path = './pubspec.yaml'}) {
-    print('getVersion');
     final file = File(path);
     if (!file.existsSync()) throw Exception('File not found');
     final yaml = file.readAsStringSync().toPubspecYaml();
